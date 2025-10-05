@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../img/bglojabeneficio.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  min-height: 100vh;
+}
+
+
+main{
+    width: 50%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    color: white;
+    flex: 1;
+}
+/*Navbar - da para tirar esse de baixo */
+.logotop {
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+  border-bottom: 5px solid greenyellow;
+  position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: auto;
+}
+
+.navbar {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  color: white;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 5px solid greenyellow;
+  position: fixed;
+  top: 0; /* Isso garante que ele fique colado no topo */
+  left: 0; /* Isso garante que ele fique colado no canto esquerdo */
+  width: 100%; /* Isso faz com que ele ocupe 100% da largura */
+  z-index: 1000; /* Garante que ele fique sobreposto ao resto do conteúdo */
+  
+}
+
+
+.navbar ul {
+  text-align: center;
+  justify-content: center;
+  font-size: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  
+}
+
+.login{
+  color: white;
+  background-color: black;
+  width: 900px;
+  height: auto;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.navbar li {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  margin: 13px;
+  color: white;
+  width: justify;
+  min-width: 150px;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  
+}
+.vips {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 1em;
+  width: 900px;
+  height: 100%;
+}
+.mensal {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+}
+section{
+  color: white;
+  justify-items: center;
+}
+
+.section h3{
+  justify-items: center;
+}
+.eterno {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+}
+.unban {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1em;
+  margin-top: 25px;
+  width: 500px;
+  margin-bottom: 50px;
+}
+.item {
+  background-color: black;
+  width: 250px;
+  height: 370px;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  
+}
+.tipo {
+  color: gray;
+  font-size: 100px;
+  margin-top: 25px;
+  border-bottom: 5px solid greenyellow;
+
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: greenyellow;
+
+}
+h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: greenyellow;
+}
+h3 {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  margin: 0;
+}
+
+.buy {
+  color: white;
+  background-color: green;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  width: 120px;
+  height: 50px;
+  margin-top: 15px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+/*Link*/
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+/*Hover e active*/
+li:hover {
+  color: greenyellow;
+  cursor: pointer;
+}
+
+.buy:hover {
+  color: white;
+  background-color: rgb(8, 107, 8);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  outline: none;
+  font-size: 17px;
+  width: 120px;
+  height: 50px;
+  margin-top: 15px;
+  border-bottom: 4px solid rgb(6, 77, 6);
+  border-right: 3px solid rgb(6, 77, 6);
+  cursor: pointer;
+}
+
+.valor {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: goldenrod;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  margin-top: 0;
+  margin-left: 65%;
+}
+
+.beneficio {
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  opacity: 0.7;
+  font-size: 15px;
+  font-weight: 400;
+}
+.beneficio:hover {
+  color: rgb(100, 99, 99);
+  font-family: "Poppins", sans-serif;
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 400;
+}
+/*Responsivo*/
+@media only screen and (max-device-width: 900px) {
+  /*Navbar*/
+
+  .navbar ul {
+    font-size: 20px;
+    margin: 10px;
+  }
+  
+  .navbar li {
+    width: 110px;
+  }
+  /*Loja*/
+  .vips {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+  }
+  /*nao apaga esse de baixo*/
+  .mensal {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5px;
+    align-items: center;
+  }
+  /*nao apaga esse de baixo*/
+  .eterno {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    margin-top: 5px;
+  }
+/*nao apaga esse de baixo*/
+  .unban {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 400px;
+    height: 100%;
+  }
+
+  .unban .item {
+    margin-top: 10px;
+  }
+}
+.rede-social{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 10px;
+}
+.titulo-form {
+    font-size: 2.5rem; /* Aumenta o tamanho da fonte */
+    font-weight: 700; /* Deixa a fonte mais pesada (negrito) */
+}

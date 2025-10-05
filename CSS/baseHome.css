@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.logotop{
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/logoL.png);
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body{
+    background-color: #dddcdc;
+    color: #333;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+
+  background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 2px;
+}
+nav{
+    background-color: #006494;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+
+}
+main{
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0,120,250,10);
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+section{
+    margin: 20px ;
+    padding: 50px;
+    width: 90%;
+    align-content: left;
+    border-radius: 12px;
+    /* background: linear-gradient(to right,#5fc2cf,#70aaef,#ddd); */
+    /* background: radial-gradient(circle,#5fc2cf,#70aaef); */
+    /* background: conic-gradient(#344857,#547853,#514861); */
+    background-color: #eee;
+    flex-wrap: wrap;
+}
+section h1{
+    max-width: 900px;
+    text-align: center ;
+}
+.div1 { grid-area: 1 / 1 / 6 / 4; }
+
+section h2{
+    text-align: center;
+    font-family: var(--font-secundaria);
+    margin: 20px ;
+    border-bottom: 1px solid #2c3e50;
+    padding: 150px;
+}
+.div2 { grid-area: 1 / 4 / 3 / 6; 
+width: 95%;
+padding: 160px;
+}
+
+
+
+/*width: 210px;
+padding: 16px */
+.teste{
+width: 30%;
+padding: 16px;
+}

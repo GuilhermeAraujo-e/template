@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    min-height: 100vh;
+  }
+
+header{
+    background-color: #13293D;
+    color: white;
+    text-align: center;
+    padding: 150px;
+}
+
+
+nav{
+    background-color: #006494;
+    padding: 20px;
+    text-align: center;
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+main{
+    width: 50%;
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 70px;
+    box-shadow: 0 0 10px rgba(0,120,250,10);
+    flex: 1;
+}
+.dest{
+    background-image: url('../Images/fundoA.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 114, 122);
+    font-size: 24px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 100 auto;
+}
+.container img{
+    width: 40%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.texto{
+    width: 60%;
+    padding: 20px;
+}
+.bloco {
+    background-color: #ffffff; /* ou outra cor de fundo desejada */
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    width: 90%;
+    max-width: 1200px;
+}
+
+section:nth-child(even) .texto {
+    order: -1 ;/*Move o texto para antes da imagem*/
+}
+

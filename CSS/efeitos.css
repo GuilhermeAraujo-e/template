@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+  }
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+	
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*testando essa linha de baixo*/
+.fade-up{
+  animation: fadeUp both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 50%;
+
+}
+@keyframes fadeUp {
+   from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.4);
+   }
+   to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+   }
+} 
+.btn-secondary :hover{
+color: greenyellow;
+  cursor: pointer;
+}
+.btn-dois :hover{
+color: greenyellow;
+  cursor: pointer;
+}
+.btn-secondary {
+background: linear-gradient(to right, greenyellow 0%, #bfec1d 100%);
+padding: 0 5px 0 0;
+text-decoration: none;
+transform: skew(-15deg);
+display: flex;
+cursor: pointer;
+border-style: none !important;
+}
+
+.btn-dois {
+    background: greenyellow;
+    padding: 0 5px 0 5px;
+    transform: skew(-15deg);
+    display: flex;
+    cursor: pointer;
+}
+.btn-dois .inner {
+    background: #000;
+    font-family: "teko", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 15px 25px 5px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s  ease 0s;
+}
+
+.btn-secondary .inner {
+    background: #000;
+    font-family: "teko", sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    padding: 15px 25px 5px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s  ease 0s;
+}
+
+
+.fullscreen-carousel {
+  height: 100vh; /* 100% da altura da tela */
+}
+
+.fullscreen-carousel .carousel-inner,
+.fullscreen-carousel .carousel-item {
+  height: 100%; /* Garante que os itens internos também tenham a altura total */
+}
+
+.fullscreen-carousel .carousel-item img {
+  height: 100%;
+  object-fit: cover; /* Recorta a imagem para cobrir a área sem distorcer */  
+}
+
+.autoShow{
+  animation: text-appear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 100vh;
+}
+@keyframes text-appear{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
